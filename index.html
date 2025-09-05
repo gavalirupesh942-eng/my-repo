@@ -1,0 +1,391 @@
+<create_file name="index.html" >
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maharashtra Career Academy - Empowering Future Defenders</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <style>
+    /* Custom styles for better aesthetics with blue and saffron influences */
+    .hero-bg {
+      background: linear-gradient(
+        to right,
+        #ff9933 0%,
+        #ffffff 20%,
+        #fff200 40%,
+        #ffffff 60%,
+        #000080 100%
+      );
+    }
+    .section-bg {
+      background: rgba(255, 153, 51, 0.1); /* Subtle saffron tint */
+    }
+    .nav-link:hover {
+      color: #000080; /* Navy blue */
+      transform: scale(1.05);
+    }
+    .logo-overlay {
+      position: absolute;
+      opacity: 0.7;
+    }
+    .army-logo {
+      top: 10px;
+      left: 10px;
+    }
+    .police-logo {
+      top: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div
+      class="container mx-auto px-4 py-4 flex justify-between items-center"
+    >
+      <h1 class="text-2xl font-bold text-orange-600">
+        Maharashtra Career Academy<br /><span class="text-sm text-gray-600"
+          >महाराष्ट्र करिअर अकॅडमी</span
+        >
+      </h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#home" class="nav-link transition duration-300">Home</a></li>
+        <li><a href="#about" class="nav-link transition duration-300">About</a></li>
+        <li><a href="#courses" class="nav-link transition duration-300">Courses</a></li>
+        <li><a href="#gallery" class="nav-link transition duration-300">Gallery</a></li>
+        <li><a href="#contact" class="nav-link transition duration-300">Contact</a></li>
+        <li><a href="#inquiry" class="nav-link transition duration-300">Inquiry</a></li>
+      </ul>
+      <button class="md:hidden" onclick="toggleMenu()">☰</button>
+    </div>
+    <ul id="mobile-menu" class="md:hidden hidden bg-white border-t shadow-md">
+      <li><a href="#home" class="block px-4 py-2 nav-link">Home</a></li>
+      <li><a href="#about" class="block px-4 py-2 nav-link">About</a></li>
+      <li><a href="#courses" class="block px-4 py-2 nav-link">Courses</a></li>
+      <li><a href="#gallery" class="block px-4 py-2 nav-link">Gallery</a></li>
+      <li><a href="#contact" class="block px-4 py-2 nav-link">Contact</a></li>
+      <li><a href="#inquiry" class="block px-4 py-2 nav-link">Inquiry</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section
+    id="home"
+    class="hero-bg h-screen flex items-center justify-center text-center px-4 relative"
+  >
+    <i
+      class="fas fa-user-shield text-6xl text-green-600 army-logo logo-overlay absolute"
+    ></i>
+    <i
+      class="fas fa-user-badge text-6xl text-blue-600 police-logo logo-overlay absolute"
+    ></i>
+    <div class="max-w-4xl">
+      <h2 class="text-5xl font-bold text-gray-800 mb-4">
+        Welcome to Maharashtra Career Academy
+      </h2>
+      <p class="text-xl text-gray-700 mb-6">
+        Empowering Future Defenders of the Nation
+      </p>
+      <p class="text-lg text-gray-600 mb-8">
+        An institute under Chatrapati Shivaji Shikshan Sanstha
+      </p>
+      <a
+        href="#about"
+        class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition duration-300"
+        >Learn More</a
+      >
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-bg py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8 text-orange-600">About Us</h2>
+      <p class="text-lg mb-4">
+        Maharashtra Career Academy, located at Karamala Tembhurni Road,
+        Kumbhej Fata, Jeur, Maharashtra, is dedicated to fostering excellence
+        in competitive exam preparation for careers in the police, army, and
+        intelligence sectors.
+      </p>
+      <p class="text-lg mb-4">
+        Operating under the esteemed Chatrapati Shivaji Shikshan Sanstha, our
+        academy emphasizes discipline, focus, and determination—qualities
+        essential for success in defense and government service examinations.
+      </p>
+      <p class="text-lg mb-4">
+        Our unique outdoor classroom sessions provide students with a spacious,
+        natural environment that promotes concentration and well-being while
+        maintaining social distancing. This innovative approach bridges
+        educational gaps and encourages a healthy balance between study and
+        physical health.
+      </p>
+      <p class="text-lg">
+        We cultivate a strong sense of community and team spirit through group
+        activities and celebrations, enhancing morale and camaraderie among
+        students.
+      </p>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center text-orange-600">Our Courses</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <i class="fas fa-user-shield text-4xl text-green-600 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Army Exam Preparation</h3>
+          <p class="text-gray-600">
+            Focused coaching for army entrance exams with physical fitness
+            training.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <i class="fas fa-user-badge text-4xl text-blue-600 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Police Exam Preparation</h3>
+          <p class="text-gray-600">Comprehensive training for police services exams.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <i class="fas fa-eye text-4xl text-purple-600 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">IB Exam Preparation</h3>
+          <p class="text-gray-600">
+            Preparation for Intelligence Bureau exams with strategic insights.
+          </p>
+          <br />
+          <h3 class="text-lg font-semibold">Additional Trainings</h3>
+          <p class="text-gray-600">Physical Fitness & Personality Development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section-bg py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center text-orange-600">Gallery</h2>
+      <p class="text-center mb-8 text-gray-700">
+        Showcasing our unique outdoor classroom sessions and community
+        activities.
+      </p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="relative">
+          <img
+            src="images/2d905c89-b7e0-4397-98fe-cf75ac0af93a.jpg"
+            alt="Outdoor classroom session in an open field with students seated on mats, maintaining social distancing, preparing for army exams, with blue and saffron color aesthetic highlighting disciplined focus and natural surroundings"
+            class="rounded-lg shadow-md"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-orange-500/20 rounded-lg"
+          ></div>
+        </div>
+        <div class="relative">
+          <img
+            src="images/5d272fa4-be42-4aba-ba72-e15dfb65b0d1.jpg"
+            alt="Group gathering of students celebrating after exam sessions, promoting team spirit and camaraderie in a natural outdoor setting with vibrant blue and saffron tones enhancing the joyful and unified atmosphere"
+            class="rounded-lg shadow-md"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-orange-500/20 rounded-lg"
+          ></div>
+        </div>
+        <div class="relative">
+          <img
+            src="images/319c5fa3-ca46-4447-8864-ac61260d9458.jpg"
+            alt="Students engaging in physical fitness training for police career preparation in an open field, with social distancing observed, featuring motivational blue and saffron overlays symbolizing discipline and national pride"
+            class="rounded-lg shadow-md"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-orange-500/20 rounded-lg"
+          ></div>
+        </div>
+        <div class="relative">
+          <img
+            src="images/3508ea76-0d5c-4685-9705-d51b07f99997.jpg"
+            alt="Interactive session under Chatrapati Shivaji Shikshan Sanstha banner for intelligence bureau exam prep, students focused outdoors with blue-saffron aesthetic emphasizing educational bridging and well-being balance"
+            class="rounded-lg shadow-md"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-orange-500/20 rounded-lg"
+          ></div>
+        </div>
+        <div class="relative">
+          <img
+            src="images/40198ade-f6ec-4349-a994-33371f746664.jpg"
+            alt="Celebration event post-training with Maharashtra Career Academy theme, group camaraderie in field setting, saffron-blue gradients enhancing community spirit and determination for defense services"
+            class="rounded-lg shadow-md"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-orange-500/20 rounded-lg"
+          ></div>
+        </div>
+        <div class="relative">
+          <img
+            src="images/b75e538a-188b-4c92-87ef-200007ae1b31.jpg"
+            alt="Outdoor study area at Karamala Tembhurni Road, students preparing for competitive exams with focus on army and police careers, natural environment promoting physical health, blue-orange aesthetic for inspiration"
+            class="rounded-lg shadow-md"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-orange-500/20 rounded-lg"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8 text-orange-600">Contact Us</h2>
+      <p class="text-lg mb-4">
+        <i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>Location: Karamala
+        Tembhurni Road, Kumbhej Fata, Jeur, Maharashtra
+      </p>
+      <p class="text-lg mb-4">
+        <i class="fas fa-phone text-blue-600 mr-2"></i>Phone: [8830365073]
+      </p>
+      <p class="text-lg mb-4">
+        <i class="fas fa-envelope text-blue-600 mr-2"></i>Email: [maharashtracareearacadamy@gmail.com]
+      </p>
+      <p class="text-lg">
+        <i class="fas fa-users text-blue-600 mr-2"></i>Social Media: [https://www.instagram.com/maharashtra_career_acadamy_jeu?igsh=MWF0cGhtbWZqdWNtNQ==]
+      </p>
+    </div>
+  </section>
+
+  <!-- Inquiry Form Section -->
+  <section id="inquiry" class="section-bg py-16">
+    <div class="container mx-auto px-4 max-w-xl">
+      <h2 class="text-3xl font-bold mb-8 text-center text-orange-600">Admission Inquiry</h2>
+      <form
+        action="https://formspree.io/f/xdklplaq"
+        method="POST"
+        class="bg-white p-8 rounded-lg shadow-md"
+      > 
+        <div class="mb-6">
+          <label for="name" class="block mb-2 font-semibold text-gray-700"
+            >Full Name<span class="text-red-600">*</span></label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+            placeholder="Enter your full name"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="email" class="block mb-2 font-semibold text-gray-700"
+            >Email Address<span class="text-red-600">*</span></label
+          >
+          <input
+            type="email"
+            id="email"
+            name="_replyto"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="phone" class="block mb-2 font-semibold text-gray-700"
+            >Phone Number<span class="text-red-600">*</span></label
+          >
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            pattern="[0-9]{10}"
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+            placeholder="Enter 10-digit phone number"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="course" class="block mb-2 font-semibold text-gray-700"
+            >Course Interested In<span class="text-red-600">*</span></label
+          >
+          <select
+            id="course"
+            name="course"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+          >
+            <option value="" disabled selected>Select a course</option>
+            <option value="Army Exam Preparation">Army Exam Preparation</option>
+            <option value="Police Exam Preparation">Police Exam Preparation</option>
+            <option value="IB Exam Preparation">IB Exam Preparation</option>
+            <option value="Physical Fitness Training">Physical Fitness Training</option>
+            <option value="Personality Development & Interview Guidance">Personality Development & Interview Guidance</option>
+          </select>
+        </div>
+        <div class="mb-6">
+          <label for="instagram" class="block mb-2 font-semibold text-gray-700"
+            >Instagram Profile Link</label
+          >
+          <input
+            type="url"
+            id="instagram"
+            name="instagram"
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+            placeholder="https://instagram.com/yourprofile"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="facebook" class="block mb-2 font-semibold text-gray-700"
+            >Facebook Profile Link</label
+          >
+          <input
+            type="url"
+            id="facebook"
+            name="facebook"
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+            placeholder="https://facebook.com/yourprofile"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block mb-2 font-semibold text-gray-700"
+            >Additional Message</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+            placeholder="Write any questions or details here..."
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-orange-500 text-white py-3 rounded-md font-semibold hover:bg-orange-600 transition duration-300"
+        >
+          Submit Inquiry
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-orange-600 text-white py-6 text-center">
+    <p>
+      &copy; 2024 Maharashtra Career Academy | An institute under Chatrapati Shivaji
+      Shikshan Sanstha
+    </p>
+    <p>Empowering Future Defenders of the Nation</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>
+</create_file>
